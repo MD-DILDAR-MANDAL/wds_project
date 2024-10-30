@@ -1,2 +1,4 @@
 wdsenv/
 checkpoints/
+model/
+testing/model
