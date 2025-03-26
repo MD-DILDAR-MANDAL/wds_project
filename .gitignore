@@ -1,6 +1,6 @@
 wdsenv/
-checkpoints/
 model/
+checkpoints/
 testing/model
 testing(460x460)5k/experiments
 testing(360x360)fixed(0.96 acc)/model
