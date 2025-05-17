@@ -1,5 +1,5 @@
 # vgg16 26 epochs
-------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 Total Loss: 0.1963
 Classification Loss: 0.1791
 Bounding Box Loss: 0.0172
@@ -23,7 +23,7 @@ weighted avg       0.90      0.90      0.90       718
 
 
 # vgg 19 27 epochs
--------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 Total Loss: 0.1896
 Classification Loss: 0.1762
 Bounding Box Loss: 0.0134
@@ -47,7 +47,7 @@ weighted avg       0.90      0.90      0.89       718
 
 
 # custom 21 
-------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 26 epoch
 -------------------------------------------------------
 Total Loss: 2.2811
@@ -95,9 +95,80 @@ Classification Report:
    macro avg       0.91      0.88      0.89       718
 weighted avg       0.92      0.91      0.91       718
 
+21-re
+-----------------------------------------------------------
+epochs: 32
+
+Total Loss: 2.3223
+Classification Loss: 0.1597
+Bounding Box Loss: 0.0240
+Classification Accuracy: 0.9067
+Top-3 Accuracy: 1.0000
+Bounding Box MAE: 0.0484
+Bounding Box MSE: 0.0484
+Test Accuracy: 0.9095
+F1 Score: 0.9060
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       knife       0.94      0.98      0.96       316
+    long_gun       0.97      0.68      0.80       148
+      pistol       0.85      0.96      0.90       254
+
+    accuracy                           0.91       718
+   macro avg       0.92      0.87      0.89       718
+weighted avg       0.92      0.91      0.91       718
+
+epochs: 33  
+-------------------------------------------------------
+Total Loss: 2.2751
+Classification Loss: 0.1411
+Bounding Box Loss: 0.0269
+Classification Accuracy: 0.9123
+Top-3 Accuracy: 1.0000
+Bounding Box MAE: 0.0544
+Bounding Box MSE: 0.0544
+Test Accuracy: 0.9109
+F1 Score: 0.9095
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       knife       0.97      0.97      0.97       316
+    long_gun       0.93      0.74      0.83       148
+      pistol       0.84      0.93      0.88       254
+
+    accuracy                           0.91       718
+   macro avg       0.91      0.88      0.89       718
+weighted avg       0.91      0.91      0.91       7189
+
+epochs 34
+--------------------------------------------
+Total Loss: 2.2606
+Classification Loss: 0.1518
+Bounding Box Loss: 0.0338
+Classification Accuracy: 0.9123
+Top-3 Accuracy: 1.0000
+Bounding Box MAE: 0.0697
+Bounding Box MSE: 0.0697
+Test Accuracy: 0.9234
+F1 Score: 0.9230
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       knife       0.99      0.97      0.98       316
+    long_gun       0.91      0.79      0.84       148
+      pistol       0.86      0.95      0.90       254
+
+    accuracy                           0.92       718
+   macro avg       0.92      0.90      0.91       718
+weighted avg       0.93      0.92      0.92       718
+
 
 # Resnet50
---------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Total Loss: 0.3919
 Classification Loss: 0.3756
 Bounding Box Loss: 0.0163
@@ -119,8 +190,9 @@ Classification Report:
    macro avg       0.81      0.76      0.77       718
 weighted avg       0.82      0.80      0.80       718
 
+
 # custom 25
--------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 100 epochs
 -------------------------------
 Total Loss: 1.4523
@@ -143,6 +215,52 @@ Classification Report:
     accuracy                           0.88       718
    macro avg       0.90      0.84      0.86       718
 weighted avg       0.90      0.88      0.88       718
+
+epochs 64
+-----------------------------------------
+Total Loss: 2.2833
+Classification Loss: 0.1624
+Bounding Box Loss: 0.0163
+Classification Accuracy: 0.9234
+Top-3 Accuracy: 1.0000
+Bounding Box MAE: 0.0325
+Bounding Box MSE: 0.0325
+Test Accuracy: 0.9220
+F1 Score: 0.9216
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       knife       0.97      0.97      0.97       316
+    long_gun       0.88      0.82      0.85       148
+      pistol       0.89      0.92      0.90       254
+
+    accuracy                           0.92       718
+   macro avg       0.91      0.90      0.91       718
+weighted avg       0.92      0.92      0.92       718
+
+epochs 60
+------------------------------------
+Total Loss: 2.4852
+Classification Loss: 0.2110
+Bounding Box Loss: 0.0170
+Classification Accuracy: 0.8997
+Top-3 Accuracy: 1.0000
+Bounding Box MAE: 0.0341
+Bounding Box MSE: 0.0341
+Test Accuracy: 0.8983
+F1 Score: 0.8956
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       knife       0.97      0.97      0.97       316
+    long_gun       0.92      0.68      0.78       148
+      pistol       0.82      0.94      0.88       254
+
+    accuracy                           0.90       718
+   macro avg       0.90      0.86      0.87       718
+weighted avg       0.90      0.90      0.90       718
 
 epochs 26
 ---------------------------------
@@ -167,74 +285,6 @@ Classification Report:
    macro avg       0.88      0.82      0.84       718
 weighted avg       0.88      0.87      0.87       718
 
-epochs 40
------------------------------------
-Total Loss: 3.3639
-Classification Loss: 0.1646
-Bounding Box Loss: 0.0201
-Classification Accuracy: 0.9123
-Top-3 Accuracy: 1.0000
-Bounding Box MAE: 0.0403
-Bounding Box MSE: 0.0403
-Test Accuracy: 0.9123
-F1 Score: 0.9127
-
-Classification Report:
-              precision    recall  f1-score   support
-
-       knife       0.99      0.97      0.98       316
-    long_gun       0.83      0.81      0.82       148
-      pistol       0.86      0.91      0.88       254
-
-    accuracy                           0.91       718
-   macro avg       0.90      0.89      0.89       718
-weighted avg       0.91      0.91      0.91       718
-
-epochs 45
-----------------------------------
-Total Loss: 3.1292
-Classification Loss: 0.1804
-Bounding Box Loss: 0.0173
-Classification Accuracy: 0.9109
-Top-3 Accuracy: 1.0000
-Bounding Box MAE: 0.0345
-Bounding Box MSE: 0.0345
-Test Accuracy: 0.9136
-F1 Score: 0.9122
-
-Classification Report:
-              precision    recall  f1-score   support
-
-       knife       0.94      0.99      0.96       316
-    long_gun       0.89      0.79      0.84       148
-      pistol       0.89      0.89      0.89       254
-
-    accuracy                           0.91       718
-   macro avg       0.91      0.89      0.90       718
-weighted avg       0.91      0.91      0.91       718
-
-epochs 60
-------------------------------------
-Total Loss: 2.4852
-Classification Loss: 0.2110
-Bounding Box Loss: 0.0170
-Classification Accuracy: 0.8997
-Top-3 Accuracy: 1.0000
-Bounding Box MAE: 0.0341
-Bounding Box MSE: 0.0341
-Test Accuracy: 0.8983
-F1 Score: 0.8956
-
-Classification Report:
-              precision    recall  f1-score   support
-
-       knife       0.97      0.97      0.97       316
-    long_gun       0.92      0.68      0.78       148
-      pistol       0.82      0.94      0.88       254
-
-    accuracy                           0.90       718
-   macro avg       0.90      0.86      0.87       718
-weighted avg       0.90      0.90      0.90       718
 
 # EfficientNetB0
 ------------------------------------
